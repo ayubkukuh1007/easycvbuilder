@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">easycvbuilder</string>
+    <string name="splash_easy_cv_builder_app">Easy Cv Builder App</string>
+    <string name="splash_loading">loading...</string>
 </resources>
