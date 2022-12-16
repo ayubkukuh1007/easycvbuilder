@@ -2,11 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/burger"
-        android:icon="@mipmap/ic_launcher"
-        android:title="burger" />
-
-    <item android:id="@+id/burger2"
-        android:icon="@mipmap/ic_launcher"
-        android:title="burger"/>
+        android:icon="@drawable/cloud_download"
+        android:title="downloadPDF"
+        app:showAsAction="ifRoom"/>
 
 </menu>

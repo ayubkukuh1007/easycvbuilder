@@ -7,13 +7,27 @@
     tools:context=".MainActivity">
 
     <!-- Note: A RecyclerView can also be used -->
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingBottom="100dp"
-        android:clipToPadding="false">
+        android:background="@color/gray_E5E5E5"
+        android:clipToPadding="false"
+        android:paddingBottom="100dp">
 
-        <!-- Scrollable content -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:listitem="@layout/dashboard_item_list">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
 
@@ -23,15 +37,59 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        app:navigationIcon="@mipmap/ic_launcher"
+        app:navigationIcon="@drawable/filter_list"
         app:menu="@menu/bottom_app_bar"
         />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lin_popup"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bottomAppBar"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:text="Share With Friends"/>
+
+        <TextView
+            android:id="@+id/rateapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:text="Rate The app"/>
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:text="Privacy Policy"/>
+
+        <TextView
+            android:id="@+id/termofservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:text="Terms Of Service"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ic_launcher"
-        app:layout_anchor="@id/bottomAppBar"
-        />
+        app:srcCompat="@drawable/add_circle"
+        app:backgroundTint="@color/orange_FC5F06"
+        app:tint="@color/white"
+        app:layout_anchor="@id/bottomAppBar"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
