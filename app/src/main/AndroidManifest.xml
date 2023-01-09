@@ -13,12 +13,20 @@
         android:theme="@style/Theme.Easycvbuilder"
         tools:targetApi="31">
         <activity
+            android:name=".Education"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PersonalDetail"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,11 +37,14 @@
             android:name=".ProfileSection"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
 
             <meta-data
                 android:name="android.app.lib_name"

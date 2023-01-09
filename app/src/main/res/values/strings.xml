@@ -10,4 +10,12 @@
     <string name="personaldetail_phone">Phone</string>
     <string name="personaldetail_dateofbirt">Date of Birt (Optional)</string>
     <string name="personaldetail_photo">Photo (Optional)</string>
+    <!--education-->
+    <string name="education_toolbar">Education</string>
+    <string name="educartion_addbtn">add</string>
+    <string name="education_labeledu">Education 1</string>
+    <string name="education_degree">Course / Degree</string>
+    <string name="education_school">School / University</string>
+    <string name="education_score">Grade / Score</string>
+    <string name="education_years">Year</string>
 </resources>
