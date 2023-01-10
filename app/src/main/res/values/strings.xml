@@ -18,4 +18,13 @@
     <string name="education_school">School / University</string>
     <string name="education_score">Grade / Score</string>
     <string name="education_years">Year</string>
+    <!--experince-->
+    <string name="experience_label">Experience</string>
+    <string name="experience_help_label">Experience</string>
+    <string name="experience_details">Details</string>
+    <string name="experience_endate">End Date</string>
+    <string name="experience_startdate">Start Date</string>
+    <string name="experience_grade">Grade / Score</string>
+    <string name="experience_jobtitle">Job Title</string>
+    <string name="experience_company">Company Name</string>
 </resources>
