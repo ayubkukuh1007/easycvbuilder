@@ -27,4 +27,8 @@
     <string name="experience_grade">Grade / Score</string>
     <string name="experience_jobtitle">Job Title</string>
     <string name="experience_company">Company Name</string>
+    <!--skill-->
+    <string name="skill_label_toolbar">Skill</string>
+    <string name="skill_info">Skill</string>
+    <string name="skill_score">Score</string>
 </resources>
