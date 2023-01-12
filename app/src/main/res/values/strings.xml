@@ -36,4 +36,11 @@
     <!--Summary-->
     <string name="summary_labelsummary">Summary</string>
     <string name="summary_workas">Work as</string>
+    <!--social media-->
+    <string name="socialmedia_label">Social media</string>
+    <string name="socialmedia_ig">Instagram</string>
+    <string name="socialmedia_fb">Facebook</string>
+    <string name="socialmedia_twitter">Twitter</string>
+    <string name="socialmedia_linkdin">Linkedin</string>
+    <string name="socialmedia_web">Personal Website</string>
 </resources>
