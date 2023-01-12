@@ -33,4 +33,7 @@
     <string name="skill_score">Score</string>
     <!--Hobby-->
     <string name="hobby_label_hoby">Hobby</string>
+    <!--Summary-->
+    <string name="summary_labelsummary">Summary</string>
+    <string name="summary_workas">Work as</string>
 </resources>
