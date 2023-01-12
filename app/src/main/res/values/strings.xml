@@ -43,4 +43,8 @@
     <string name="socialmedia_twitter">Twitter</string>
     <string name="socialmedia_linkdin">Linkedin</string>
     <string name="socialmedia_web">Personal Website</string>
+    <!--language-->
+    <string name="language_label">Language</string>
+    <string name="language_score">Score</string>
+    <string name="languge_btnadd">add</string>
 </resources>
