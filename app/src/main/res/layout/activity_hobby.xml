@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Skill">
+    tools:context=".Hobby">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="@string/skill_label_toolbar"
+        android:text="@string/hobby_label_hoby"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,7 @@
         app:srcCompat="@drawable/check" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_exp"
+        android:id="@+id/rv_hobby"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,7 +57,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/skill_list_rv" />
+        tools:listitem="@layout/hobby_list_rv" />
 
     <Button
         android:id="@+id/add_btn"
@@ -79,14 +79,14 @@
         app:layout_constraintStart_toStartOf="parent"
         android:background="@color/black"
         android:alpha="0.6"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -96,11 +96,11 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/skillinf"
+                android:id="@+id/hobby_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/skill_info"
+                android:text="@string/hobby_label_hoby"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -117,8 +117,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/skillinf"
-                app:srcCompat="@drawable/skill_info" />
+                app:layout_constraintTop_toBottomOf="@+id/hobby_info"
+                app:srcCompat="@drawable/info_hobby" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

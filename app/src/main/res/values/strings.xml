@@ -31,4 +31,6 @@
     <string name="skill_label_toolbar">Skill</string>
     <string name="skill_info">Skill</string>
     <string name="skill_score">Score</string>
+    <!--Hobby-->
+    <string name="hobby_label_hoby">Hobby</string>
 </resources>
