@@ -54,4 +54,5 @@
     <string name="complatecv_labelcdate">14/12/2022</string>
     <string name="complatecv_labeldelete">Delete</string>
     <string name="complatecv_labelshare">Share</string>
+    <string name="template_labeltoolbar">Choose Template</string>
 </resources>
