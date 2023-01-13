@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:padding="4dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_pdf"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pdf" />
+
+        <TextView
+            android:id="@+id/title_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:padding="4dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/complatecv_labeltitle"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/icon_pdf"
+            app:layout_constraintTop_toTopOf="@+id/icon_pdf" />
+
+        <TextView
+            android:id="@+id/create_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/complatecv_labelcdate"
+            android:textSize="12sp"
+            android:padding="4dp"
+            app:layout_constraintStart_toStartOf="@+id/title_resume"
+            app:layout_constraintTop_toBottomOf="@+id/title_resume" />
+
+        <ImageView
+            android:id="@+id/border_strip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/title_resume"
+            app:layout_constraintStart_toStartOf="@+id/icon_pdf"
+            app:layout_constraintTop_toBottomOf="@+id/icon_pdf"
+            app:srcCompat="@drawable/border_strip" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/gray_C4C4C4"
+            android:drawableLeft="@drawable/trash_g"
+            android:text="@string/complatecv_labeldelete"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/gray_C4C4C4"
+            android:drawableLeft="@drawable/share_g"
+            android:text="@string/complatecv_labelshare"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_delete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

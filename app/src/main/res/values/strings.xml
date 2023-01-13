@@ -47,4 +47,11 @@
     <string name="language_label">Language</string>
     <string name="language_score">Score</string>
     <string name="languge_btnadd">add</string>
+    <!--complatelcv-->
+    <string name="complatecv_labelgpdf">Generate PDF</string>
+    <string name="complatecv_labelads">Ads</string>
+    <string name="complatecv_labeltitle">Resume_11_12_2022_10</string>
+    <string name="complatecv_labelcdate">14/12/2022</string>
+    <string name="complatecv_labeldelete">Delete</string>
+    <string name="complatecv_labelshare">Share</string>
 </resources>
