@@ -55,4 +55,27 @@
     <string name="complatecv_labeldelete">Delete</string>
     <string name="complatecv_labelshare">Share</string>
     <string name="template_labeltoolbar">Choose Template</string>
+    <!--formating template-->
+    <string name="formating_template_toolbar">Formating Template</string>
+    <string name="formating_template_print">Print</string>
+    <string name="formating_template_download">Download</string>
+    <string name="formating_template_setfont">Setting Font</string>
+    <string name="formating_template_fontexp">Font Experince</string>
+    <string name="formating_template_fontcont">Font Contact</string>
+    <string name="formating_template_fontedu">Font Education</string>
+    <string name="formating_template_fontskill">Font Skills</string>
+    <string name="formating_template_hobby">Hobbies</string>
+    <string name="formating_template_setltemp">Settings Label Template</string>
+    <string name="formating_template_lbeexp">Work Experience</string>
+    <string name="formating_template_contact">Contact</string>
+    <string name="formating_template_edu">Education</string>
+    <string name="formating_template_skill">Skills</string>
+    <string name="formating_template_hobbies">Hobbies</string>
+    <string name="formating_template_font">Font</string>
+    <string name="formating_template_opt">Optional</string>
+    <string name="formating_template_sign">Signature</string>
+    <string name="formating_template_bg">Background Color</string>
+    <string-array name="type_font">
+        <item>Font</item>
+    </string-array>
 </resources>
