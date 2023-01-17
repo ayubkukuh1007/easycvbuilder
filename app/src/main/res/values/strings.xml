@@ -75,6 +75,20 @@
     <string name="formating_template_opt">Optional</string>
     <string name="formating_template_sign">Signature</string>
     <string name="formating_template_bg">Background Color</string>
+    <!--template 1-->
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="tempone_name">JUSTIN</string>
+    <string name="tempone_subname">NGUYEN</string>
+    <string name="tempone_prof">DESIGN AND FRONTEND DEBELOPERS</string>
+    <string name="tempone_exp">WORK EXPERIENCE</string>
+    <string name="label_cont">CONTACT</string>
+    <string name="tempone_numb">+84 - 969877097</string>
+    <string name="tempone_email">figmateam@gmail.com</string>
+    <string name="tempone_wa">+84 - 969877097</string>
+    <string name="tempone_add">California 90999, United States</string>
+    <string name="tempone_edu">EDUCATION</string>
+    <string name="tempone_skill">SKILLS</string>
+    <string name="tempone_hob">HOBBIES</string>
     <string-array name="type_font">
         <item>Font</item>
     </string-array>

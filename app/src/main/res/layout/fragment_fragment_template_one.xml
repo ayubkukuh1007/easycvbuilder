@@ -1,13 +1,356 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".f_tem_fragment.Fragment_template_one">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/brown_shape"
+            android:layout_width="25dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/brown_BB7A3B"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgprofil"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/brown_shape"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toEndOf="@+id/brown_shape"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="205dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tempone_name"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/brown_BB7A3B"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/brown_shape"
+            app:layout_constraintTop_toBottomOf="@+id/imgprofil" />
+
+        <TextView
+            android:id="@+id/subname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tempone_subname"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/proffesion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/tempone_prof"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/subname"
+            app:layout_constraintTop_toBottomOf="@+id/subname" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/lorem"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/proffesion"
+            app:layout_constraintTop_toBottomOf="@+id/proffesion" />
+
+        <TextView
+            android:id="@+id/label_workexp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/tempone_exp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ProgressBar
+            android:id="@+id/progressworkexp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:progress="59"
+            android:progressTint="@color/brown_BB7A3B"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_workexp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressworkexp"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_list_temp_one" />
+
+        <!--right side-->
+
+        <TextView
+            android:id="@+id/label_contack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/label_cont"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imgprofil"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progresscontact"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:progress="59"
+            android:progressTint="@color/brown_BB7A3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgprofil"
+            app:layout_constraintTop_toBottomOf="@+id/label_contack" />
+
+        <ImageView
+            android:id="@+id/icon_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/call"
+            app:layout_constraintStart_toStartOf="@+id/progresscontact"
+            app:layout_constraintTop_toBottomOf="@+id/progresscontact" />
+
+        <TextView
+            android:id="@+id/call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tempone_numb"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_call"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_call"
+            app:layout_constraintTop_toTopOf="@+id/icon_call" />
+
+        <!--email-->
+        <ImageView
+            android:id="@+id/icon_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/mail"
+            app:layout_constraintStart_toStartOf="@+id/icon_call"
+            app:layout_constraintTop_toBottomOf="@+id/call" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tempone_email"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_email"
+            app:layout_constraintTop_toTopOf="@+id/icon_email" />
+
+        <!--whatsapp-->
+        <ImageView
+            android:id="@+id/icon_wa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/whatsapp"
+            app:layout_constraintStart_toStartOf="@+id/icon_email"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/wa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tempone_wa"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_wa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_wa"
+            app:layout_constraintTop_toTopOf="@+id/icon_wa" />
+
+        <!--address-->
+        <ImageView
+            android:id="@+id/icon_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/map"
+            app:layout_constraintStart_toStartOf="@+id/icon_wa"
+            app:layout_constraintTop_toBottomOf="@+id/wa" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/tempone_add"
+            app:layout_constraintBottom_toBottomOf="@+id/icon_address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon_address"
+            app:layout_constraintTop_toTopOf="@+id/icon_address" />
+
+        <TextView
+            android:id="@+id/label_education"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tempone_edu"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <ProgressBar
+            android:id="@+id/progress_education"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:progress="59"
+            android:progressTint="@color/brown_BB7A3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imgprofil"
+            app:layout_constraintTop_toBottomOf="@+id/label_education" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/progress_education"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_list_edu_temp_one" />
+
+        <TextView
+            android:id="@+id/label_skill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tempone_skill"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+        <ProgressBar
+            android:id="@+id/progress_skills"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:progress="59"
+            android:progressTint="@color/brown_BB7A3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imgprofil"
+            app:layout_constraintTop_toBottomOf="@+id/label_skill" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/progress_skills"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_list_skill_temp_one" />
+
+        <TextView
+            android:id="@+id/label_hobbies"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/tempone_hob"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+
+        <ProgressBar
+            android:id="@+id/progress_hobby"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:progress="59"
+            android:progressTint="@color/brown_BB7A3B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imgprofil"
+            app:layout_constraintTop_toBottomOf="@+id/label_hobbies" />
+
+        <TextView
+            android:id="@+id/hobbys"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/lorem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/progress_hobby"
+            app:layout_constraintTop_toBottomOf="@+id/progress_hobby" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
