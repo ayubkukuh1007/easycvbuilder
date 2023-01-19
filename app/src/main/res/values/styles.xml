@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--custom color ratingbar-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray_C4C4C4</item>
+        <item name="colorControlActivated">@color/orange_FC5F06</item>
+    </style>
+</resources>

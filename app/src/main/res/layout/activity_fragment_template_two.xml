@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".f_tem_fragment.Fragment_template_two">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgprofil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="JUSTIN NGUYEN"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:textColor="@color/purple_500"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/imgprofil"
+            app:layout_constraintTop_toTopOf="@+id/imgprofil" />
+
+        <TextView
+            android:id="@+id/proffesion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="DESIGN AND FRONTEND DEVELOPER"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/imgprofil"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/contact_wa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="84-969877097"
+            android:textSize="8sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/imgprofil"
+            app:layout_constraintTop_toBottomOf="@+id/proffesion" />
+
+        <TextView
+            android:id="@+id/contact_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="toannd.figmateam@gmail.com"
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="@+id/contact_wa"
+            app:layout_constraintTop_toBottomOf="@+id/contact_wa" />
+
+        <TextView
+            android:id="@+id/contact_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="California 90999, United States"
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="@+id/contact_email"
+            app:layout_constraintTop_toBottomOf="@+id/contact_email" />
+
+        <!--work experience -->
+
+        <TextView
+            android:id="@+id/label_workexp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="WORK EXPERIENCE"
+            android:textColor="@color/purple_6458A6"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_circle_exp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/bg_circle_exp"
+            app:layout_constraintTop_toTopOf="@+id/bg_circle_exp" />
+
+        <ImageView
+            android:id="@+id/bg_circle_exp"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgprofil"
+            app:srcCompat="@drawable/circle_bg_temp_two" />
+
+        <ImageView
+            android:id="@+id/imglabelworkexp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_circle_exp"
+            app:layout_constraintEnd_toEndOf="@+id/bg_circle_exp"
+            app:layout_constraintStart_toStartOf="@+id/bg_circle_exp"
+            app:layout_constraintTop_toTopOf="@+id/bg_circle_exp"
+            app:srcCompat="@drawable/work" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_exp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:itemCount="2"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_workexp"
+            tools:listitem="@layout/item_list_exp_temp_two" />
+
+        <!-- education-->
+
+        <TextView
+            android:id="@+id/label_edu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="EDUCATION"
+            android:textColor="@color/purple_6458A6"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_circle_edu"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/bg_circle_edu"
+            app:layout_constraintTop_toTopOf="@+id/bg_circle_edu" />
+
+        <ImageView
+            android:id="@+id/bg_circle_edu"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_exp"
+            app:srcCompat="@drawable/circle_bg_temp_two" />
+
+        <ImageView
+            android:id="@+id/imglabeledu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_circle_edu"
+            app:layout_constraintEnd_toEndOf="@+id/bg_circle_edu"
+            app:layout_constraintStart_toStartOf="@+id/bg_circle_edu"
+            app:layout_constraintTop_toTopOf="@+id/bg_circle_edu"
+            app:srcCompat="@drawable/edu_hist" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_edu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:itemCount="3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_edu"
+            tools:listitem="@layout/item_list_edu_temp_two" />
+
+        <!--hobby interest-->
+
+        <TextView
+            android:id="@+id/label_hobby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="HOBBIES AND INTERESTS"
+            android:textColor="@color/purple_6458A6"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_circle_hobby"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toEndOf="@+id/bg_circle_hobby"
+            app:layout_constraintTop_toTopOf="@+id/bg_circle_hobby" />
+
+        <ImageView
+            android:id="@+id/bg_circle_hobby"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_edu"
+            app:srcCompat="@drawable/circle_bg_temp_two" />
+
+        <ImageView
+            android:id="@+id/imglabelhobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_circle_hobby"
+            app:layout_constraintEnd_toEndOf="@+id/bg_circle_hobby"
+            app:layout_constraintStart_toStartOf="@+id/bg_circle_hobby"
+            app:layout_constraintTop_toTopOf="@+id/bg_circle_hobby"
+            app:srcCompat="@drawable/hobby" />
+
+        <TextView
+            android:id="@+id/hobby"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/lorem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintStart_toStartOf="@+id/label_hobby"
+            app:layout_constraintTop_toBottomOf="@+id/label_hobby" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="248dp" />
+
+        <!--right side-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/purple_6458A6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/label_edu"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/quot"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/quots"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/lorem"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/quot"
+                app:layout_constraintTop_toBottomOf="@+id/quot" />
+
+            <TextView
+                android:id="@+id/label_proskill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="PRO SKILLS"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_skill"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/label_proskill"
+                app:layout_constraintTop_toBottomOf="@+id/label_proskill"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_list_skill_temp_two" />
+
+            <TextView
+                android:id="@+id/label_personal_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="PERSONAL SKILLS"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/rv_skill" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label_personal_skill"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_list_personalskill_temp_two" />
+
+            <!--followme-->
+
+            <TextView
+                android:id="@+id/label_followsos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="FOLLOW ME"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerView3" />
+
+            <TextView
+                android:id="@+id/twit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/twitter"
+                android:drawablePadding="12dp"
+                android:text="Twitter"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/label_followsos"
+                app:layout_constraintTop_toBottomOf="@+id/label_followsos" />
+
+            <TextView
+                android:id="@+id/linkdin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/linkdinw"
+                android:drawablePadding="12dp"
+                android:text="Linkdin"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/twit" />
+
+            <TextView
+                android:id="@+id/igw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:drawableLeft="@drawable/igw"
+                android:drawablePadding="12dp"
+                android:text="Instagram"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/twit"
+                app:layout_constraintTop_toBottomOf="@+id/linkdin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
